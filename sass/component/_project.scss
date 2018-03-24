@@ -1,0 +1,110 @@
+.project{
+
+  &-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+
+  &-box{
+      width: 40rem;
+      border-radius: 1rem;
+      margin: 2rem .5rem 2rem .5rem;
+      @include box-shadow-purple;
+      transition: all .3s;
+      position: relative;
+
+    &__banner{
+      position: absolute;
+      padding: 1rem 2rem 1rem 2rem;
+      color: white;
+      font-size: 2rem;
+      top: 3rem;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      font-weight: bold;
+      font-family: 'Lobster', cursive;
+
+      &-green{
+        background: #43cea2;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+
+      &-red{
+        background: #ff0084;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom left, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom left, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+
+      &-yellow{
+        background: #ffb347;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom left, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom left, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+    }
+    &:hover{
+      transform: translateY(-7px);
+      cursor: pointer;
+    }
+
+    &__top{
+
+      &-img{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        object-fit: cover;
+        width: 100%;
+        height: 30rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+      }
+    }
+
+    &__bottom{
+      height: 25rem;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      text-align: center;
+      color: $color-grey-dark;
+
+      &-header{
+        font-size: 2.5rem;
+        padding: 3rem 2rem 1rem 2rem;
+        background: linear-gradient(to top right, #7b4397, #dc2430); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      &-desc{
+        font-size: 1.6rem;
+        padding: 0 2.5rem 0 2.5rem;
+
+      }
+
+      &-tech{
+        padding-top: 1rem;
+        font-size: 1.6rem;
+
+        &-lang{
+          font-weight: bold;
+          background: linear-gradient(to top right, #7b4397, #dc2430); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          -webkit-background-clip: text;
+          color: transparent;
+        }
+
+        &-text{
+          padding: 1rem 3rem 0 3rem;
+          display: block;
+        }
+
+      }
+
+    }
+  }
+}
