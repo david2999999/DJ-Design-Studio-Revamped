@@ -39,12 +39,17 @@ body, html {
   background-color: #67AECA;
   color: #fff; }
 
+body {
+  font-family: "lato", sans-serif; }
+
 .logo {
   color: #fff;
   font-size: 1.6rem;
   height: 10rem;
   width: 25rem;
-  position: relative; }
+  position: absolute;
+  left: 2rem;
+  top: 1rem; }
   .logo-d, .logo-j, .logo-text {
     font-size: 7rem;
     font-family: 'Lobster', cursive; }
@@ -52,12 +57,14 @@ body, html {
     transform: rotate(-30deg);
     position: absolute;
     top: 1rem;
-    left: 1rem; }
+    left: 1rem;
+    text-shadow: 0px 0px 20px #FFC5EE; }
   .logo-j {
     transform: rotate(16deg);
     position: absolute;
     top: 1rem;
-    right: 1rem; }
+    right: 1rem;
+    text-shadow: 0px 0px 20px #FFC5EE; }
   .logo-text {
     font-size: 2.5rem;
     position: absolute;
@@ -67,6 +74,67 @@ body, html {
 .header {
   height: 100vh;
   position: relative;
-  background-image: linear-gradient(to top left, rgba(255, 209, 148, 0.6), rgba(112, 225, 245, 0.9)), url("../img/cherry-blossom.jpg");
+  background-image: linear-gradient(to top left, rgba(168, 192, 255, 0.1), rgba(63, 43, 150, 0.95)), url("../img/cherry-blossom.jpg");
   background-size: cover;
-  background-position: top; }
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 100% 90vh, 70% 100%, 0 80vh); }
+  .header__primary-text {
+    color: white;
+    font-size: 3rem;
+    width: 50rem;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 20rem;
+    left: 30rem;
+    font-weight: bold;
+    letter-spacing: 3px; }
+    .header__primary-text-special {
+      font-family: 'Dancing Script', cursive;
+      font-weight: 700;
+      font-size: 12rem;
+      display: block;
+      letter-spacing: 5px;
+      padding-bottom: 1.5rem;
+      text-shadow: 0px 0px 20px #FFC5EE; }
+      .header__primary-text-special-1 {
+        font-size: 7rem;
+        font-family: 'Dancing Script', cursive;
+        text-shadow: 0px 0px 20px #FFC5EE; }
+  .header__nav {
+    position: absolute;
+    right: 7rem;
+    top: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px; }
+    .header__nav-ul {
+      list-style: none;
+      display: block; }
+      .header__nav-ul-li {
+        margin: .6rem;
+        padding: 1rem;
+        display: inline-block; }
+      .header__nav-ul-link {
+        color: white;
+        text-decoration: none;
+        font-size: 1.7rem;
+        transition: all .3s;
+        backface-visibility: hidden;
+        display: inline-block;
+        border: 2px white solid;
+        padding: .7rem 2.5rem .7rem 2.5rem;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 16px -2px white;
+        -moz-box-shadow: 0px 0px 16px -2px white;
+        box-shadow: 0px 0px 16px -2px white; }
+        .header__nav-ul-link:hover {
+          transform: translateY(-5px);
+          color: #e6ffff;
+          border: 2px #e6ffff solid; }
+  .header__ipad {
+    position: absolute;
+    right: 40rem;
+    top: 15rem; }
+    .header__ipad-img {
+      width: 40rem;
+      transform: rotate(-30deg); }
