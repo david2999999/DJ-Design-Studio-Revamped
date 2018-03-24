@@ -71,10 +71,48 @@ body {
     left: 6.5rem;
     top: 3.7rem; }
 
+.about__card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto; }
+
+.about__card {
+  width: 30rem;
+  height: 31rem;
+  background: white;
+  border-radius: 2rem;
+  margin: 10rem 0 4rem 0;
+  text-align: center;
+  -webkit-box-shadow: 10px 11px 46px -10px #6b346b;
+  -moz-box-shadow: 10px 11px 46px -10px #6b346b;
+  box-shadow: 10px 11px 46px -10px #6b346b;
+  transition: all .3s; }
+  .about__card-icon {
+    font-size: 6rem;
+    margin: 0 auto;
+    display: inline-block;
+    padding-top: 3rem;
+    background: linear-gradient(to top right, #7b4397, #dc2430);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    color: transparent; }
+  .about__card-header {
+    font-size: 2rem;
+    color: #777;
+    padding: 1rem; }
+  .about__card-text {
+    font-size: 1.6rem;
+    color: #777;
+    padding: 1rem 2rem 0 2rem; }
+  .about__card:hover {
+    transform: translateY(-10px);
+    cursor: pointer; }
+
 .header {
   height: 100vh;
-  position: relative;
-  background-image: linear-gradient(to top left, rgba(168, 192, 255, 0.1), rgba(63, 43, 150, 0.95)), url("../img/cherry-blossom.jpg");
+  width: 100%;
+  background-image: linear-gradient(to top left, rgba(187, 51, 255, 0.05), rgba(63, 43, 150, 0.7)), url("../img/cherry-blossom.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 100% 90vh, 70% 100%, 0 80vh); }
@@ -138,3 +176,6 @@ body {
     .header__ipad-img {
       width: 40rem;
       transform: rotate(-30deg); }
+
+.about {
+  margin-bottom: 20rem; }
