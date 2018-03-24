@@ -109,6 +109,24 @@ body {
     transform: translateY(-10px);
     cursor: pointer; }
 
+.banner {
+  height: 44rem;
+  background: linear-gradient(to top left, rgba(187, 51, 255, 0.9), rgba(63, 43, 150, 0.9));
+  background-size: cover;
+  width: 100%;
+  clip-path: polygon(0 0, 5% 15%, 95% 15%, 100% 0, 100% 100%, 95% 85%, 5% 85%, 0 100%);
+  margin-bottom: 5rem; }
+  .banner__text {
+    font-size: 2rem;
+    color: white;
+    text-align: center; }
+    .banner__text-1 {
+      padding: 7% 15% 2% 15%; }
+    .banner__text-2 {
+      padding: 0 15% 1% 15%; }
+    .banner__text-3 {
+      padding: 0 15% 1% 15%; }
+
 .header {
   height: 100vh;
   width: 100%;
@@ -141,16 +159,16 @@ body {
         text-shadow: 0px 0px 20px #FFC5EE; }
   .header__nav {
     position: absolute;
-    right: 7rem;
+    right: 5rem;
     top: 2rem;
     font-weight: bold;
     letter-spacing: 1px; }
     .header__nav-ul {
       list-style: none;
-      display: block; }
+      display: block;
+      backface-visibility: hidden; }
       .header__nav-ul-li {
         margin: .6rem;
-        padding: 1rem;
         display: inline-block; }
       .header__nav-ul-link {
         color: white;
@@ -162,13 +180,14 @@ body {
         border: 2px white solid;
         padding: .7rem 2.5rem .7rem 2.5rem;
         border-radius: 10px;
+        margin: 0 1rem 0 1rem;
         -webkit-box-shadow: 0px 0px 16px -2px white;
         -moz-box-shadow: 0px 0px 16px -2px white;
         box-shadow: 0px 0px 16px -2px white; }
         .header__nav-ul-link:hover {
           transform: translateY(-5px);
           color: #e6ffff;
-          border: 2px #e6ffff solid; }
+          border-color: #e6ffff; }
   .header__ipad {
     position: absolute;
     right: 40rem;
@@ -178,4 +197,4 @@ body {
       transform: rotate(-30deg); }
 
 .about {
-  margin-bottom: 20rem; }
+  margin-bottom: 10rem; }
