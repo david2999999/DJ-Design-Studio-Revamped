@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: inherit; }
+
+a:active, a:visited {
+  text-decoration: none !important; }
+
+a:hover {
+  text-decoration: none !important; }
+
+body, html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  background-color: #eeeeee;
+  overflow-x: hidden; }
+  @media only screen and (min-width: 112.5em) {
+    body, html {
+      font-size: 62.5%; } }
+  @media only screen and (max-width: 75em) {
+    body, html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 62.5em) {
+    body, html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    body, html {
+      font-size: 45%; } }
+
+::selection {
+  background-color: #67AECA;
+  color: #fff; }
+
+.logo {
+  color: #fff;
+  font-size: 1.6rem;
+  height: 10rem;
+  width: 25rem;
+  position: relative; }
+  .logo-d, .logo-j, .logo-text {
+    font-size: 7rem;
+    font-family: 'Lobster', cursive; }
+  .logo-d {
+    transform: rotate(-30deg);
+    position: absolute;
+    top: 1rem;
+    left: 1rem; }
+  .logo-j {
+    transform: rotate(16deg);
+    position: absolute;
+    top: 1rem;
+    right: 1rem; }
+  .logo-text {
+    font-size: 2.5rem;
+    position: absolute;
+    left: 6.5rem;
+    top: 3.7rem; }
+
+.header {
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(to top left, rgba(255, 209, 148, 0.6), rgba(112, 225, 245, 0.9)), url("../img/cherry-blossom.jpg");
+  background-size: cover;
+  background-position: top; }

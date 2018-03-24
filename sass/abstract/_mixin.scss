@@ -1,0 +1,54 @@
+@mixin absCenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin clearfix{
+  &::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin linear-gradient-cherry{
+  background: #FBD3E9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top left, #BB377D, #FBD3E9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top left, #BB377D, #FBD3E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin linear-gradient-shore{
+  background: #70e1f5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+// media queries
+@mixin respond($breakpoint){
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {    // 600px
+      @content
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and  (max-width: 62.5em) {   // 1000px
+      @content
+    }
+  }
+
+  @if $breakpoint == tab-land{
+    @media only screen and  (max-width: 75em) {    // 1200px
+      @content
+    }
+  }
+
+  @if $breakpoint == big-desktop{
+    @media only screen and  (min-width: 112.5em) { //1800px
+      @content
+    }
+  }
+}
