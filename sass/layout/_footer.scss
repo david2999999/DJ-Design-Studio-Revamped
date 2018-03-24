@@ -1,0 +1,103 @@
+.footer{
+  padding: 5rem 0 0rem 0 ;
+  background: #41295a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  &__bottom{
+    background-color: #240843;
+    color: white;
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+  }
+
+  &-icon{
+    font-size: 4rem;
+    color: white;
+    margin-right: 1rem;
+
+    &-text{
+      font-size: 3rem;
+      color: white;
+    }
+  }
+  &__logo{
+    width: 25rem;
+    margin: 0 auto;
+  }
+
+  &__contact{
+    display: flex;
+    font-family: 'Lobster', cursive;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    &-icon{
+      font-size: 2.5rem;
+      padding-right: 1rem;
+    }
+
+    &-left{
+      width: 40rem;
+      margin-bottom: 4rem;
+      &__desc{
+        color: white;
+        font-size: 2rem;
+        padding-bottom: 3rem;
+      }
+    }
+
+    &-right{
+      width: 40rem;
+      //background-color: #43cea2;
+      height: 30rem;
+
+      &-ul{
+        list-style: none;
+
+        &-li{
+          text-align: center;
+          color: white;
+          font-size: 2rem;
+          margin-bottom: 2rem;
+          padding: 1rem 0 1rem 0rem;
+          //background-color: red;
+          display: block;
+          border-bottom-right-radius: 1rem;
+          border-top-right-radius: 1rem;
+          border-left: 1rem solid white;
+          border-top: 1px solid white;
+          border-bottom: 1px solid white;
+          border-right: 1px solid white;
+          transition: all .3s;
+
+          &:hover{
+            transform: translateX(10px);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &__name{
+      font-size: 3.5rem;
+      color: white;
+      padding-bottom: 2rem;
+    }
+
+    &__ul{
+      list-style: none;
+
+      &-li{
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+  }
+}

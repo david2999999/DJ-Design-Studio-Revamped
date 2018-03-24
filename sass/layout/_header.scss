@@ -3,11 +3,18 @@
   width: 100%;
   background-image:
           linear-gradient(to top left, rgba(#bb33ff,.05), rgba(#3f2b96, .7)),
-          url("../img/cherry-blossom.jpg");
+          url("../img/cherry-blossom-min.jpg");
   background-size: cover;
   background-position: top;
   //-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 100% 90vh, 70% 100%, 0 80vh);
+
+
+  &__logo{
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+  }
 
   &__primary-text{
     color: white;

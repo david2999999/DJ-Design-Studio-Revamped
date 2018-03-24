@@ -47,29 +47,47 @@ body {
   font-size: 1.6rem;
   height: 10rem;
   width: 25rem;
-  position: absolute;
-  left: 2rem;
-  top: 1rem; }
+  position: relative; }
+  .logo-lg {
+    height: 15rem;
+    width: 32rem; }
   .logo-d, .logo-j, .logo-text {
     font-size: 7rem;
     font-family: 'Lobster', cursive; }
+    .logo-d-lg, .logo-j-lg, .logo-text-lg {
+      font-size: 10rem; }
   .logo-d {
     transform: rotate(-30deg);
     position: absolute;
     top: 1rem;
     left: 1rem;
     text-shadow: 0 0 20px #FFC5EE; }
+    .logo-d-lg {
+      transform: rotate(-30deg);
+      position: absolute;
+      top: .7rem;
+      left: -.7rem; }
   .logo-j {
     transform: rotate(16deg);
     position: absolute;
     top: 1rem;
     right: 1rem;
     text-shadow: 0px 0px 20px #FFC5EE; }
+    .logo-j-lg {
+      transform: rotate(16deg);
+      position: absolute;
+      top: 0;
+      right: 1.2rem; }
   .logo-text {
     font-size: 2.5rem;
     position: absolute;
     left: 6.5rem;
     top: 3.7rem; }
+    .logo-text-lg {
+      font-size: 3.5rem;
+      position: absolute;
+      left: 7rem;
+      top: 4rem; }
 
 .about__card-container {
   display: flex;
@@ -215,13 +233,92 @@ body {
         padding: 1rem 3rem 0 3rem;
         display: block; }
 
+.footer {
+  padding: 5rem 0 0rem 0;
+  background: #41295a;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2F0743, #41295a);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2F0743, #41295a);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .footer__bottom {
+    background-color: #240843;
+    color: white;
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-weight: bold; }
+  .footer-icon {
+    font-size: 4rem;
+    color: white;
+    margin-right: 1rem; }
+    .footer-icon-text {
+      font-size: 3rem;
+      color: white; }
+  .footer__logo {
+    width: 25rem;
+    margin: 0 auto; }
+  .footer__contact {
+    display: flex;
+    font-family: 'Lobster', cursive;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    .footer__contact-icon {
+      font-size: 2.5rem;
+      padding-right: 1rem; }
+    .footer__contact-left {
+      width: 40rem;
+      margin-bottom: 4rem; }
+      .footer__contact-left__desc {
+        color: white;
+        font-size: 2rem;
+        padding-bottom: 3rem; }
+    .footer__contact-right {
+      width: 40rem;
+      height: 30rem; }
+      .footer__contact-right-ul {
+        list-style: none; }
+        .footer__contact-right-ul-li {
+          text-align: center;
+          color: white;
+          font-size: 2rem;
+          margin-bottom: 2rem;
+          padding: 1rem 0 1rem 0rem;
+          display: block;
+          border-bottom-right-radius: 1rem;
+          border-top-right-radius: 1rem;
+          border-left: 1rem solid white;
+          border-top: 1px solid white;
+          border-bottom: 1px solid white;
+          border-right: 1px solid white;
+          transition: all .3s; }
+          .footer__contact-right-ul-li:hover {
+            transform: translateX(10px);
+            cursor: pointer; }
+    .footer__contact__name {
+      font-size: 3.5rem;
+      color: white;
+      padding-bottom: 2rem; }
+    .footer__contact__ul {
+      list-style: none; }
+      .footer__contact__ul-li {
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 2rem; }
+
 .header {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(to top left, rgba(187, 51, 255, 0.05), rgba(63, 43, 150, 0.7)), url("../img/cherry-blossom.jpg");
+  background-image: linear-gradient(to top left, rgba(187, 51, 255, 0.05), rgba(63, 43, 150, 0.7)), url("../img/cherry-blossom-min.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 100% 90vh, 70% 100%, 0 80vh); }
+  .header__logo {
+    position: absolute;
+    left: 2rem;
+    top: 1rem; }
   .header__primary-text {
     color: white;
     font-size: 3rem;
