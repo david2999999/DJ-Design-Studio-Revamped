@@ -1,18 +1,5 @@
+I'm a self taught web designer and programmer from Binghamton University. I'm currently pursuing my bachelor degree in computer engineering, while also taking part in a small web and game development team. My passion is bringing ideas to life and also solving real world challenges.
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+Languages and Frameworks: HTML5, CSS3, Javascript, jQuery, Java, Spring, SQL, Express, Mongoose, Bootstrap3, SemanticUI
 
-
-Hi there! Welcome to Cloud9 IDE!
-
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
-
-Happy coding!
-The Cloud9 IDE team
+Tools & Expertise: Node.js, Git, MongoDB, MySQL, Hibernate, JDBC, Tomcat, Heroku, SASS.

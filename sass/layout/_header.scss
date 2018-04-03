@@ -1,19 +1,44 @@
 .header{
   height: 100vh;
-  width: 100%;
   background-image:
           linear-gradient(to top left, rgba(#bb33ff,.05), rgba(#3f2b96, .7)),
           url("../img/cherry-blossom-min.jpg");
   background-size: cover;
   background-position: top;
-  //-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
   clip-path: polygon(0 0, 100% 0, 100% 80%, 100% 90vh, 70% 100%, 0 80vh);
 
+  @include respond(tab-port) {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 100% 90vh, 80% 100%, 0 90vh);
+  }
+
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%, 0 100vh);
+  }
+
+  &__logo-header-container{
+    width: 95%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include respond(phone) {
+      width: 95%;
+    }
+  }
 
   &__logo{
-    position: absolute;
-    left: 2rem;
-    top: 1rem;
+    width: 25rem;
+
+    @include respond(phone) {
+      margin: 0 auto;
+    }
+
+    @include respond(tab-port) {
+      margin: 0 auto;
+    }
   }
 
   &__primary-text{
@@ -22,13 +47,17 @@
     width: 50rem;
     text-align: center;
     display: block;
-    //background-color: red;
     position: absolute;
-    top: 20rem;
-    left: 30rem;
+    top: 20%;
+    left: 20%;
     font-weight: bold;
     letter-spacing: 3px;
 
+    @include respond(phone) {
+      top: 30%;
+      left: 10%;
+      font-size: 4rem;
+    }
 
     &-special{
       font-family: 'Dancing Script', cursive;
@@ -37,28 +66,36 @@
       display: block;
       letter-spacing: 5px;
       padding-bottom: 1.5rem;
-      text-shadow: 0px 0px 20px #FFC5EE;
+      text-shadow: 0 0 20px #FFC5EE;
 
       &-1{
         font-size: 7rem;
         font-family: 'Dancing Script', cursive;
-        text-shadow: 0px 0px 20px #FFC5EE;
       }
     }
   }
 
   &__nav{
-
-    position: absolute;
-    right: 5rem;
-    top: 2rem;
     font-weight: bold;
     letter-spacing: 1px;
+    width: 55rem;
+    text-align: center;
+    padding-top: 2rem;
+    display: block;
+
+    @include respond(phone) {
+      margin: 0 auto;
+    }
+
+    @include respond(tab-port) {
+      margin: 0 auto;
+    }
 
     &-ul{
       list-style: none;
       display: block;
       backface-visibility: hidden;
+      width: 100%;
 
       &-li{
         margin: .6rem;
@@ -88,16 +125,5 @@
       }
     }
 
-  }
-
-  &__ipad{
-    position: absolute;
-    right: 40rem;
-    top: 15rem;
-
-    &-img{
-      width: 40rem;
-      transform: rotate(-30deg);
-    }
   }
 }

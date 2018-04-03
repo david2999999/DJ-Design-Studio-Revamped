@@ -6,23 +6,45 @@
   clip-path: polygon(0 0, 5% 15%, 95% 15%, 100% 0, 100% 100%, 95% 85%,5% 85%, 0 100%);
   margin-bottom: 5rem;
 
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    height: 48rem;
+  }
+
+  @include respond(tab-port) {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  }
+
   &__text{
     font-size: 2rem;
     color: white;
     text-align: center;
     text-shadow: 0 0 10px #FFC5EE;
 
-
     &-1{
-      padding: 7% 15% 2% 15%;
+      padding: 13rem 15% 2% 15%;
+
+      @include respond(phone) {
+        padding: 0 10% 2% 10%;
+      }
+
+      @include respond(tab-port) {
+        padding: 7rem 10% 1% 10%;
+      }
+
     }
 
-    &-2{
+    &-2, &-3{
       padding: 0 15% 1% 15%;
-    }
 
-    &-3{
-      padding: 0 15% 1% 15%;
+      @include respond(phone) {
+        padding: 3rem 10% 1% 10%;
+      }
+
+
+      @include respond(tab-port) {
+        padding: 4rem 10% 1% 10%;
+      }
     }
 
   }

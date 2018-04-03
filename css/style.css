@@ -134,17 +134,34 @@ body {
   width: 100%;
   clip-path: polygon(0 0, 5% 15%, 95% 15%, 100% 0, 100% 100%, 95% 85%, 5% 85%, 0 100%);
   margin-bottom: 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .banner {
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+      height: 48rem; } }
+  @media only screen and (max-width: 62.5em) {
+    .banner {
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%); } }
   .banner__text {
     font-size: 2rem;
     color: white;
     text-align: center;
     text-shadow: 0 0 10px #FFC5EE; }
     .banner__text-1 {
-      padding: 7% 15% 2% 15%; }
-    .banner__text-2 {
+      padding: 13rem 15% 2% 15%; }
+      @media only screen and (max-width: 37.5em) {
+        .banner__text-1 {
+          padding: 0 10% 2% 10%; } }
+      @media only screen and (max-width: 62.5em) {
+        .banner__text-1 {
+          padding: 7rem 10% 1% 10%; } }
+    .banner__text-2, .banner__text-3 {
       padding: 0 15% 1% 15%; }
-    .banner__text-3 {
-      padding: 0 15% 1% 15%; }
+      @media only screen and (max-width: 37.5em) {
+        .banner__text-2, .banner__text-3 {
+          padding: 3rem 10% 1% 10%; } }
+      @media only screen and (max-width: 62.5em) {
+        .banner__text-2, .banner__text-3 {
+          padding: 4rem 10% 1% 10%; } }
 
 .project-container {
   display: flex;
@@ -310,15 +327,34 @@ body {
 
 .header {
   height: 100vh;
-  width: 100%;
   background-image: linear-gradient(to top left, rgba(187, 51, 255, 0.05), rgba(63, 43, 150, 0.7)), url("../img/cherry-blossom-min.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 100% 90vh, 70% 100%, 0 80vh); }
+  @media only screen and (max-width: 62.5em) {
+    .header {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 100% 90vh, 80% 100%, 0 90vh); } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%, 0 100vh); } }
+  .header__logo-header-container {
+    width: 95%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 37.5em) {
+      .header__logo-header-container {
+        width: 95%; } }
   .header__logo {
-    position: absolute;
-    left: 2rem;
-    top: 1rem; }
+    width: 25rem; }
+    @media only screen and (max-width: 37.5em) {
+      .header__logo {
+        margin: 0 auto; } }
+    @media only screen and (max-width: 62.5em) {
+      .header__logo {
+        margin: 0 auto; } }
   .header__primary-text {
     color: white;
     font-size: 3rem;
@@ -326,10 +362,15 @@ body {
     text-align: center;
     display: block;
     position: absolute;
-    top: 20rem;
-    left: 30rem;
+    top: 20%;
+    left: 20%;
     font-weight: bold;
     letter-spacing: 3px; }
+    @media only screen and (max-width: 37.5em) {
+      .header__primary-text {
+        top: 30%;
+        left: 10%;
+        font-size: 4rem; } }
     .header__primary-text-special {
       font-family: 'Dancing Script', cursive;
       font-weight: 700;
@@ -337,21 +378,28 @@ body {
       display: block;
       letter-spacing: 5px;
       padding-bottom: 1.5rem;
-      text-shadow: 0px 0px 20px #FFC5EE; }
+      text-shadow: 0 0 20px #FFC5EE; }
       .header__primary-text-special-1 {
         font-size: 7rem;
-        font-family: 'Dancing Script', cursive;
-        text-shadow: 0px 0px 20px #FFC5EE; }
+        font-family: 'Dancing Script', cursive; }
   .header__nav {
-    position: absolute;
-    right: 5rem;
-    top: 2rem;
     font-weight: bold;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    width: 55rem;
+    text-align: center;
+    padding-top: 2rem;
+    display: block; }
+    @media only screen and (max-width: 37.5em) {
+      .header__nav {
+        margin: 0 auto; } }
+    @media only screen and (max-width: 62.5em) {
+      .header__nav {
+        margin: 0 auto; } }
     .header__nav-ul {
       list-style: none;
       display: block;
-      backface-visibility: hidden; }
+      backface-visibility: hidden;
+      width: 100%; }
       .header__nav-ul-li {
         margin: .6rem;
         display: inline-block; }
@@ -373,13 +421,6 @@ body {
           transform: translateY(-5px);
           color: #e6ffff;
           border-color: #e6ffff; }
-  .header__ipad {
-    position: absolute;
-    right: 40rem;
-    top: 15rem; }
-    .header__ipad-img {
-      width: 40rem;
-      transform: rotate(-30deg); }
 
 .about {
   margin-bottom: 10rem; }
