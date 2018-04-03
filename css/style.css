@@ -250,6 +250,9 @@ body {
         padding: 1rem 3rem 0 3rem;
         display: block; }
 
+.project__link {
+  text-decoration: none; }
+
 .footer {
   padding: 5rem 0 0rem 0;
   background: #41295a;
