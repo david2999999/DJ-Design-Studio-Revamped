@@ -300,6 +300,8 @@ body {
       height: 30rem; }
       .footer__contact-right-ul {
         list-style: none; }
+        .footer__contact-right-ul a {
+          text-decoration: none; }
         .footer__contact-right-ul-li {
           text-align: center;
           color: white;
