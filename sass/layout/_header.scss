@@ -100,7 +100,6 @@
       &-li{
         margin: .6rem;
         display: inline-block;
-
       }
 
       &-link{
@@ -115,7 +114,6 @@
         border-radius: 10px;
         margin: 0 1rem 0 1rem;
         @include box-shadow-white;
-
 
         &:hover{
           transform: translateY(-5px);
