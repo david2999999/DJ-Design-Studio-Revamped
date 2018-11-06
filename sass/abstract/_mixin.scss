@@ -34,9 +34,9 @@
 }
 
 @mixin box-shadow-purple{
-  -webkit-box-shadow: 10px 11px 46px -10px rgba(107,52,107,1);
-  -moz-box-shadow: 10px 11px 46px -10px rgba(107,52,107,1);
-  box-shadow: 10px 11px 46px -10px rgba(107,52,107,1);
+  -webkit-box-shadow: 5px 6px 20px -10px rgba(107,52,107,1);
+  -moz-box-shadow: 5px 6px 20px -10px rgba(107,52,107,1);
+  box-shadow: 5px 6px 20px -10px rgba(107,52,107,1);
 }
 // media queries
 @mixin respond($breakpoint){
