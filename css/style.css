@@ -99,19 +99,20 @@ body {
   width: 30rem;
   height: 31rem;
   background: white;
-  border-radius: 2rem;
+  border-radius: 1.2rem;
   margin: 10rem 0 4rem 0;
   text-align: center;
-  -webkit-box-shadow: 10px 11px 46px -10px #6b346b;
-  -moz-box-shadow: 10px 11px 46px -10px #6b346b;
-  box-shadow: 10px 11px 46px -10px #6b346b;
-  transition: all .3s; }
+  -webkit-box-shadow: 5px 6px 20px -10px #6b346b;
+  -moz-box-shadow: 5px 6px 20px -10px #6b346b;
+  box-shadow: 5px 6px 20px -10px #6b346b;
+  transition: all .3s;
+  border: 1px solid #bdc3c7; }
   .about__card-icon {
     font-size: 6rem;
     margin: 0 auto;
     display: inline-block;
     padding-top: 3rem;
-    background: linear-gradient(to top right, #7b4397, #dc2430);
+    background: linear-gradient(to top right, #009FFF, #aa076b);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     color: transparent; }
@@ -129,7 +130,7 @@ body {
 
 .banner {
   height: 44rem;
-  background: linear-gradient(to top left, rgba(187, 51, 255, 0.9), rgba(63, 43, 150, 0.9));
+  background: linear-gradient(to top right, #aa076b, #61045f);
   background-size: cover;
   width: 100%;
   clip-path: polygon(0 0, 5% 15%, 95% 15%, 100% 0, 100% 100%, 95% 85%, 5% 85%, 0 100%);
@@ -171,21 +172,22 @@ body {
 
 .project-box {
   width: 40rem;
-  border-radius: 1rem;
+  border-radius: .7rem;
   margin: 2rem .5rem 2rem .5rem;
-  -webkit-box-shadow: 10px 11px 46px -10px #6b346b;
-  -moz-box-shadow: 10px 11px 46px -10px #6b346b;
-  box-shadow: 10px 11px 46px -10px #6b346b;
+  -webkit-box-shadow: 5px 6px 20px -10px #6b346b;
+  -moz-box-shadow: 5px 6px 20px -10px #6b346b;
+  box-shadow: 5px 6px 20px -10px #6b346b;
   transition: all .3s;
-  position: relative; }
+  position: relative;
+  border: 1px solid #bdc3c7; }
   .project-box__banner {
     position: absolute;
     padding: 1rem 2rem 1rem 2rem;
     color: white;
     font-size: 2rem;
     top: 3rem;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-top-right-radius: .7rem;
+    border-bottom-right-radius: .7rem;
     font-weight: bold;
     font-family: 'Lobster', cursive; }
     .project-box__banner-green {
@@ -219,8 +221,8 @@ body {
     object-fit: cover;
     width: 100%;
     height: 30rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem; }
+    border-top-left-radius: .7rem;
+    border-top-right-radius: .7rem; }
   .project-box__bottom {
     height: 25rem;
     border-bottom-left-radius: 1rem;
@@ -230,7 +232,7 @@ body {
     .project-box__bottom-header {
       font-size: 2.5rem;
       padding: 3rem 2rem 1rem 2rem;
-      background: linear-gradient(to top right, #7b4397, #dc2430);
+      background: linear-gradient(to right, #aa076b, #61045f);
       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       -webkit-background-clip: text;
       color: transparent; }
@@ -242,7 +244,7 @@ body {
       font-size: 1.6rem; }
       .project-box__bottom-tech-lang {
         font-weight: bold;
-        background: linear-gradient(to top right, #7b4397, #dc2430);
+        background: linear-gradient(to right, #aa076b, #61045f);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         -webkit-background-clip: text;
         color: transparent; }
@@ -255,14 +257,12 @@ body {
 
 .footer {
   padding: 5rem 0 0rem 0;
-  background: #41295a;
+  background: #61043d;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #2F0743, #41295a);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #2F0743, #41295a);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  background: -webkit-linear-gradient(to bottom right, #61043d, #61045f);
+  background: linear-gradient(to bottom right, #61043d, #61045f); }
   .footer__bottom {
-    background-color: #240843;
+    background-color: #000000;
     color: white;
     width: 100%;
     font-size: 2rem;
