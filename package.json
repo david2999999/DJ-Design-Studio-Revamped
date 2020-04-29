@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "backbone-model": "^1.0.10",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "node-sass": "^4.7.2",
     "underscore": "^1.8.3"
   }
